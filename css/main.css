@@ -1,0 +1,82 @@
+@charset "uft-8";
+
+/* 초기화 */
+* {
+	margin: 0;
+	padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:  border-box;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 초기화 끝 */
+
+
+/* 헤더 영역 */
+header {
+    width: 100%;
+    height: 75px;
+    background-color: red;
+}
+/* 헤더 영역 끝 */
+
+
+/* 바디 영역 */
+.mainSlide {
+    width: 100%;
+    height: 800px;
+    background-color: orange;
+}
+
+.mainContents {
+    width: 100%;
+    padding: 0 35px;
+}
+.subBanner {
+    width: 100%;
+    height: 30vw;
+    margin-top: 30px;
+    background-color: yellow;
+}
+.program {
+    width: 100%;
+    height: 50vw;
+    max-width: 1400px;
+    max-height: 752px;
+    margin: 0 auto;
+    margin-top: 205px;
+    padding: 0 15px;
+    background-color: green;
+}
+.notice {
+    width: 100%;
+    height: 343px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    padding: 0 15px;
+    background-color: blue;
+}
+
+/* 바디 영역 끝 */
+
+
+/* 푸터 영역 */
+footer {
+    width: 100%;
+    height: 198px;
+    background-color: violet;
+}
