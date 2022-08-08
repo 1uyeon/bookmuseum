@@ -172,19 +172,43 @@ header {
 .selectTab li:hover {
     background-color: #1080A6;
     transition: 0.5s ease-in-out;
-}
+
+/* 메인슬라이드 영역 끝*/}
+
 
 /* 메인컨텐츠 영역 */
 .mainContents {
     width: 100%;
     padding: 0 35px;
 }
+/* 서브배너 영역 */
 .subBanner {
     width: 100%;
     height: 30vw;
     margin-top: 30px;
-    background-color: yellow;
+    display: flex;
 }
+.subBanner>div {
+    position: relative;
+    width: 50%;
+}
+.subBanner>div>a, .subBanner>div>a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.subBanner p {
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 0;
+    left: 0;
+    font-size: 36px;
+}
+.subBanner p span {
+    font-weight: 700;
+}
+
+/* 프로그램 영역 */
 .program {
     width: 100%;
     height: 50vw;
