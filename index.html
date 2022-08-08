@@ -8,6 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>송파 책박물관</title>
 </head>
@@ -54,7 +65,37 @@
     <div class="bodyWrap">
         <!-- 메인 슬라이드 영역 -->
         <div class="mainSlide">
-            메인슬라이드 영역
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/mainSlide/slide1.jpg" alt="기획특별전"></div>
+                    <div class="swiper-slide"><img src="img/mainSlide/slide2.png" alt="음성안내기대여"></div>
+                    <div class="swiper-slide"><img src="img/mainSlide/slide3.jpg" alt="여름방학프로그램"></div>
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- autoplay stop&play button -->
+                <div class="swiper-button-area">
+                    <div class="swiper-button-pause"><img src="img/mainSlide/vis_pause.png" alt="stop"></div>
+                    <div class="swiper-button-play nonedp"><img src="img/mainSlide/vis_play.png" alt="play"></div>
+                </div>
+            </div>
+
+            <div class="selectTab">
+                <ul>
+                    <li><a href="#">관람예약</a></li>
+                    <li><a href="#">전시</a></li>
+                    <li><a href="#">교육</a></li>
+                    <li><a href="#">소장품</a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- 메인 컨텐츠 영역 -->

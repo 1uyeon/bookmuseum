@@ -7,6 +7,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing:  border-box;
     box-sizing: border-box;
+    font-family: 'Noto Sans KR';
 }
 *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -37,6 +38,7 @@ header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #efefef;
     padding: 0 25px;
+    z-index: 10;
 }
 .menu {
     cursor: pointer;
@@ -70,15 +72,109 @@ header {
 
 
 /* 바디 영역 */
+/* 메인슬라이드 영역 */
 .bodyWrap {
     margin-top: 75px;
 }
 .mainSlide {
     width: 100%;
     height: 800px;
-    background-color: orange;
+    position: relative;
+}
+.mainSlide .swiper {
+    width: 100%;
+    height: 100%;
+}
+.mainSlide .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-area {
+    width: 100%;
+    position: absolute;
+    bottom: 90px;
+    z-index: 2;
+    text-align: center;
+}
+.mainSlide .swiper-pagination-bullet {
+    background: #FFFFFF;
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+}
+.mainSlide .swiper-pagination-bullet-active {
+    background: none;
+    font-size: 18px;
+}
+.swiper-pagination span {
+    margin-right: 10px !important;
+    color: #FFFFFF;
+}
+.swiper-pagination span:last-child {
+    margin-right: 0 !important;
+}
+.swiper-pagination span:first-child {
+    margin-left: 0 !important;
+}
+.nonedp {
+    display: none;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 120px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-prev {
+    background: url("../img/mainSlide/vis_prev.png");
+    width: 52px;
+    height: 100px;
+    transform: translate(0, -50%);
+    left: 10%;
+}
+.swiper-button-next {
+    background: url("../img/mainSlide/vis_next.png");
+    width: 52px;
+    height: 100px;
+    transform: translate(0, -50%);
+    right: 10%;
 }
 
+.selectTab {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(6,31,60,0.6);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.selectTab ul {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    text-align: center;
+}
+.selectTab li {
+    float: left;
+    width: 25%;
+    max-width: 350px;
+    height: 100%;
+    font-size: 24px;
+    line-height: 80px;
+    color: #FFFFFF;
+    transition: 0.5s ease-in-out;
+}
+.selectTab li:hover {
+    background-color: #1080A6;
+    transition: 0.5s ease-in-out;
+}
+
+/* 메인컨텐츠 영역 */
 .mainContents {
     width: 100%;
     padding: 0 35px;
