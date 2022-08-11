@@ -42,5 +42,12 @@ $(document).ready(function() {
     $(".swiper-button-pause").removeClass("nonedp");
   });
 
+  // more plus button
+  $('.subBanner>div').mouseover(function() {
+    $(this).children('.moreBtn').css("visibility","visible");
+  });
+  $('.subBanner>div').mouseout(function() {
+    $(this).children('.moreBtn').css("visibility","hidden");
+  });
 });
 
