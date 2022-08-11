@@ -49,5 +49,17 @@ $(document).ready(function() {
   $('.subBanner>div').mouseout(function() {
     $(this).children('.moreBtn').css("visibility","hidden");
   });
+
+  // top scroll button 
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $('.topButton').fadeIn();
+    } else {
+        $('.topButton').fadeOut();
+    }
+  });
+  $(".topButton").click(function() {
+    $('html, body').animate({scrollTop:0}, '300');
+  });
 });
 

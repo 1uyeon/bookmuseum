@@ -22,7 +22,6 @@ a {
     color: inherit;
     display: block;
 }
-
 /* 초기화 끝 */
 
 
@@ -287,6 +286,7 @@ header {
 }
 .listTxt {
     margin-top: 35px;
+    padding: 0 10px;
 }
 .listTxt h4 {
     margin-bottom: 15px;
@@ -453,4 +453,14 @@ footer {
 }
 .WA img {
     width: 100px;
+}
+/* 푸터 영역 끝 */
+
+.topButton {
+    position: fixed;
+    cursor: pointer;
+    bottom: 150px;
+    right: 45px;
+    z-index: 20;
+    display: none;
 }
