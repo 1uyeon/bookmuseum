@@ -597,7 +597,7 @@ footer {
     .listItem { width: calc( 50% - 20px ); flex-grow: 1; }
     .listItem:nth-child(2n) {margin-right: 0;}
     .listItem:nth-child(3), .listItem:nth-child(4) {margin-top: 50px;}
-    .listTxt {margin-top: 16px;}
+    .listTxt {margin-top: 16px; padding: 0 5px;}
     .listTxt h4 span {font-size: 12px;}
     .pTitle {font-size: 18px; margin-bottom: 10px;}
     .listTxt h4 {margin-bottom: 10px;}
@@ -644,4 +644,25 @@ footer {
     .ntList li h4 span { padding: 2px 5px; font-size: 12px; margin-right: 5px;}
     .ntList li p {font-size: 12px;}
 
+    footer { height: 205px ;}
+    .footerWrap { align-content: flex-end;}
+    .Rfooter { align-items: center; padding: 15px 15px 13px 15px;}
+    .agreement a { font-size: 10px; }
+    .fLogo_T img { width: 106px; height: 24px; margin-bottom: 13px;}
+    .fText ul, copyright { font-size: 10px;}
+    .WA img { width: 44px;}
+    .SNS { height: 26px ;}
+    .SNS li a, .SNS li a img { height: 100%;}
+    .SNS li:nth-child(2) { width: 20px; height: 20px;}
+    .SNS li:nth-child(3) { width: 23.5px; height: 16.5px;}
+    .SNS li:nth-child(4) { width: 24px; height: 20.5px;}
+    .SNS li:last-child { height: 26px;}
+    .SNS #siteLink {width: 107.5px; font-size: 11px;}
+    .SNS button { width: 39.05px ; font-size: 11px; top: 1.5px;}
+    .fText ul, copyright {margin-top: 8px;}
+    .fText ul:first-child { margin-top: 0;}
+    .fText ul li:not(:last-child) { margin-right: 0;}
+
+    .topButton {width: 40px; height: 40px; right: 15px; bottom: 200px;}
+    .topButton img {width: 100%; height: 100%;}
 }
