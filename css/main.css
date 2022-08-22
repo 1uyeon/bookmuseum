@@ -92,6 +92,7 @@ header {
     height: 100%;
     z-index: 23;
     transition: left .3s ease-in-out;
+    overflow: scroll;
 }
 .navi>div {
     height: 70px;
@@ -615,7 +616,6 @@ footer {
 
     .bodyWrap { margin-top: 40px;}
     .mainSlide { height: 400px;}
-
 
     .navi>div { height: 40px ;}
     .navi>div>img { width: 13px;}
